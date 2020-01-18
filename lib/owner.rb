@@ -38,6 +38,10 @@ class Owner
     new_dog.owner = self
   end
   
+  def self.cats
+    
+  end
+  
   # An owner should have the ability to walk all their dogs or feed all their cats, which will change the mood of all of their pets of that type to "happy"
   
 end
