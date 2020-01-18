@@ -14,4 +14,9 @@ class Cat
   def self.all
     @@all
   end
+  
+  def owner.cats
+    
+  end
+  
 end
