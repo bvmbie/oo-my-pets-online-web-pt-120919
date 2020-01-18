@@ -38,9 +38,7 @@ class Owner
   end
   
   def buy_cat(name, owner)
-    new_cat = Cat.new
-    new_cat.name = name
-    new_cat.owner = self
+    Cat.new(name, self)
   end
   
   def buy_dog(name)
