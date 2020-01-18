@@ -14,6 +14,10 @@ class Owner
     @@all
   end
   
+  def self.count
+    @@all.count
+  end
+  
   # owner should be able to buy and sell a pet, which will change the pet's mood
   
   def say_species
