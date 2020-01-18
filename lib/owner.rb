@@ -9,7 +9,16 @@ class Owner
     @name = name
     @species = "human"
     @@all << self
-    
+    @cats = []
+    @dogs = []
+  end
+  
+  def cats
+    @cats
+  end
+  
+  def dogs 
+    @dogs
   end
   
   def self.all
@@ -33,11 +42,13 @@ class Owner
   def buy_cat(name)
     new_cat = Cat.new(name)
     new_cat.owner = self
+    @cats << self
   end
   
   def buy_dog(name)
     Dog.new(name)
     new_dog.owner = self
+    @dogs << self
   end
   
   
