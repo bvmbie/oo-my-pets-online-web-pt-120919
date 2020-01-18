@@ -41,7 +41,7 @@ class Owner
     new_dog.owner = self
   end
   
-  def self.cats
+  def cats
     @@cats
   end
   
