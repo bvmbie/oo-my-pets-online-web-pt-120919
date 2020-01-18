@@ -3,6 +3,8 @@ class Owner
   attr_reader :name, :species
   attr_accessor 
   @@all = []
+  @@cats = []
+  
   
   def initialize (name)
     @name = name
@@ -31,6 +33,7 @@ class Owner
   def buy_cat(name)
     new_cat = Cat.new(name)
     new_cat.owner = self
+    @@cats << new_cat
   end
   
   def buy_dog(name)
@@ -39,7 +42,7 @@ class Owner
   end
   
   def self.cats
-    
+    @@cats
   end
   
   # An owner should have the ability to walk all their dogs or feed all their cats, which will change the mood of all of their pets of that type to "happy"
