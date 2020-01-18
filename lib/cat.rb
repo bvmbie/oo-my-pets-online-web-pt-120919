@@ -4,9 +4,9 @@ class Cat
   
   @@all = []
   
-  def initialize (name, owner)
+  def initialize (name)
     @name = name
-    @owner = owner
+    @owner = owner.name
     @mood = "nervous"
     @@all << self
     owner.cats << self
