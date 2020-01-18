@@ -9,7 +9,6 @@ class Owner
     @name = name
     @species = "human"
     @@all << self
-    @cats = []
   end
   
   def self.all
@@ -33,7 +32,6 @@ class Owner
   def buy_cat(name)
     new_cat = Cat.new(name)
     new_cat.owner = self
-    @cats << new_cat
   end
   
   def buy_dog(name)
@@ -41,9 +39,6 @@ class Owner
     new_dog.owner = self
   end
   
-  def cats
-    @cats
-  end
   
   # An owner should have the ability to walk all their dogs or feed all their cats, which will change the mood of all of their pets of that type to "happy"
   
