@@ -18,6 +18,10 @@ class Owner
     @@all.count
   end
   
+  def self.reset_all
+    @@all
+  end
+  
   # owner should be able to buy and sell a pet, which will change the pet's mood
   
   def say_species
