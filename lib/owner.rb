@@ -19,7 +19,7 @@ class Owner
   end
   
   def self.reset_all
-    @@all
+    @@all.clear
   end
   
   # owner should be able to buy and sell a pet, which will change the pet's mood
