@@ -37,8 +37,8 @@ class Owner
     "I am a #{self.species}."
   end
   
-  def buy_cat(name, owner=self)
-    Cat.new
+  def buy_cat(name, owner)
+    Cat.new(name, owner)
   end
   
   def buy_dog(name)
