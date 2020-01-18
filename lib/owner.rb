@@ -2,10 +2,12 @@ class Owner
   
   attr_reader :name, :species
   attr_accessor 
+  @@all = []
   
   def initialize (name)
     @name = name
     @species = "human"
+    @@all << self
   end
   
   # owner should be able to buy and sell a pet, which will change the pet's mood
